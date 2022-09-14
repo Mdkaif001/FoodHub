@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* navbar */
+.main-div {
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 0 30px;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+.logo-div {
+  font-size: 25px;
+  color: rgb(78, 78, 78);
+}
+.logo-div span {
+  color: rgb(105, 126, 158);
+}
+.list,
+.icons-items {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.list li,
+.icons-items li {
+  font-size: 25px;
+  padding: 0 20px;
+  text-decoration: none;
+}
+.insta {
+  color: #c13584;
+  transition: all 0.1s linear;
+}
+.whatsapp {
+  color: #25d366;
+  transition: all 0.1s linear;
+}
+.insta:hover {
+  color: #c13584;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(105, 126, 158);
+}
+.facebook:hover {
+  border-bottom: 2px solid rgb(105, 126, 158);
+  padding-bottom: 5px;
+}
+.whatsapp:hover {
+  color: #25d366;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(105, 126, 158);
+}
+.list li a {
+  text-decoration: none;
+  color: #222;
+  transition: all 0.1s linear;
+}
+.list li a:hover {
+  color: rgb(105, 126, 158);
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgb(105, 126, 158);
+}
+ul li {
+  list-style: none;
+  text-decoration: none;
+}
+.hamburger {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.main-heading {
+  color: rgb(105, 126, 158);
+}
+.mainDiv {
+  /* height: 100vh; */
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.subDiv {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 65px;
+}
+.container1 {
+  padding-top: 20px;
+}
+.container2 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  width: 350px;
+  height: 200px;
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin: 20px 50px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+button.btn-warning {
+  background-color: rgb(105, 126, 158);
+  border-color: rgb(105, 126, 158);
+  outline-color: rgb(105, 126, 158);
+  color: white;
+  transition: all 0.1s linear;
+}
+button.btn-warning:not(.btn-check) + .btn:hover {
+  background-color: white;
+  color: rgb(105, 126, 158);
+  border-color: rgb(105, 126, 158);
+  outline-color: rgb(105, 126, 158);
+}
+button.btn-warning.btn:first-child:hover,
+:not(.btn-check) + .btn:hover {
+  background-color: white;
+  color: rgb(105, 126, 158);
+  border-color: rgb(105, 126, 158);
+  outline-color: rgb(105, 126, 158);
+}
+.container2:hover {
+  transform: scale(1.08, 1.08);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.container2 .img,
+.container2 .info {
+  width: 50%;
+  margin: 0 4px;
+}
+.container2 .img {
+  width: 150px;
+  height: 199px;
+  margin-right: 20px;
+  margin-left: -4.8px;
+}
+.container2 .img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.info h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.info p {
+  font-size: 13px;
+  color: rgb(143, 138, 138);
+}
+.price {
+  font-size: 15px;
+  color: rgb(105, 126, 158);
+  margin-top: 5px;
+}
+.d-flex .btn-primary {
+  font-size: 13px;
+  background-color: rgb(105, 126, 158);
+  border-color: rgb(105, 126, 158);
+  outline-color: rgb(105, 126, 158);
+  transition: all 0.1s linear;
+}
+
+/* media query */
+@media (max-width: 998px) {
+  .main-list {
+    display: none;
+  }
+  .icons {
+    display: none;
+  }
+  .subDiv {
+    justify-content: center;
+  }
+  .hamburger {
+    display: block;
+  }
+  .mobile {
+    display: block;
+    margin-top: 360px;
+    width: 500px;
+    background-color: white;
+    text-align: end;
+    position: relative;
+    top: 0;
+    right: -60px;
+    z-index: 99;
+  }
+  .mobile ul {
+    display: block;
+  }
+  .mobile ul li {
+    margin: 20px 0;
+    margin-right: 20px;
+  }
+}
